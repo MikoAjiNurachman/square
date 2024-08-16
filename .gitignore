@@ -1,0 +1,4 @@
+.env
+/square_be/.env
+/square_be/node_modules
+/square_be/.vscode

@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Honshou!@#123
+      POSTGRES_DB: postgres
+
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: square_be/Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DB_USER: postgres
+      DB_PASS: Honshou!@#123
+      DB: postgres
+    env_file:
+      - square_be/.env
+
+  frontend:
+    build:
+      context: .
+      dockerfile: square_fe/Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - backend
+      
+volumes:
+  postgres_data:
