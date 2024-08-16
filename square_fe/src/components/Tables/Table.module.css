@@ -1,0 +1,61 @@
+.customTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .customTable th, .customTable td {
+    padding: 12px 15px;
+  }
+  
+  .customTable thead tr {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: left;
+  }
+  
+  .customTable tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .customTable tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .customTable tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .badge {
+    padding: 8px 12px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .detailBtn, .editBtn, .deleteBtn {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .detailBtn {
+    background-color: #00aaff;
+    color: white;
+  }
+  
+  .editBtn {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .deleteBtn {
+    background-color: #d9534f;
+    color: white;
+  }
+  

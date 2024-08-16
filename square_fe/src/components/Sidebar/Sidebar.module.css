@@ -1,0 +1,39 @@
+.sidebar {
+  background-color: #fff;
+  border-right: 1px solid #d1d0d3;
+  padding: 1.5rem;
+  grid-column: 1 / 2;
+}
+
+.sidebarTitle {
+  margin-top: 10px;
+  color: #98949E;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menuItem {
+  padding: 1rem 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.menuItem a {
+  text-decoration: none;
+  color: #98949E;
+}
+
+.menuItem:hover a, .sidebarHover a {
+  color: var(--primary-color);
+}
+
+.menuItem:hover .svgFill, .sidebarHover .svgFill {
+  fill: var(--primary-color);
+}

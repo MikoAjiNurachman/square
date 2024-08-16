@@ -1,0 +1,35 @@
+.formContainer {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .formContainer h2 {
+    text-align: center;
+  }
+  
+  .formContainer form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formContainer form label {
+    margin-bottom: 10px;
+  }
+  
+  .formContainer form input, .formContainer form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .formContainer form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
